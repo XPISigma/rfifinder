@@ -1,0 +1,117 @@
+/* Add your CSS styles here */
+
+body {
+  font-family: 'Cairo', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #808080, #202020); /* Grey to dark grey gradient background */
+        text-align: center;
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.search-container {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  font-size: 18px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.app-container {
+  text-align: center;
+  margin: 14vw auto; /* Adjust the margin to add space below the fixed navbar */
+  
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+}
+
+.image-container img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 
+    transform 0.3s ease;
+    justify-content: center;
+}
+
+.image-container img.hovered {
+  transform: scale(1.05);
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.download-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.copy-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
